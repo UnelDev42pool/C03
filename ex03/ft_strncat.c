@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 09:24:10 by edechena          #+#    #+#             */
-/*   Updated: 2023/07/08 19:45:53 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/09 17:44:16 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int	ft_strlen(char *str)
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	const int	destlen = ft_strlen(dest);
-	int			i;
+	const int		destlen = ft_strlen(dest);
+	unsigned int	i;
 
 	i = 0;
 	while (src[i] != '\0' && i < nb)
