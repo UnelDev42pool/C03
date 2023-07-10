@@ -6,36 +6,37 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 09:45:55 by edechena          #+#    #+#             */
-/*   Updated: 2023/07/09 17:47:42 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/10 22:16:44 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+int		g_i;
+int		g_j;
+
 char	*ft_strstr(char *str, char *to_find)
 {
-	int		i;
-	int		j;
 	char	*position;
 
-	i = 0;
-	j = 0;
+	g_i = 0;
+	g_j = 0;
 	position = 0;
-	if(to_find[0] == '\0')
+	if (to_find[0] == '\0')
 		return (str);
-	while (str[i] != '\0' && to_find[i] != '\0')
+	while (str[g_i] != '\0' && to_find[g_i] != '\0')
 	{
-		while (str[i] != to_find[j])
-			i++;
-		position = str + i;
-		while (str[i] == to_find[j])
+		while (str[g_i] != to_find[g_j])
+			g_i++;
+		position = str + g_i;
+		while (str[g_i] == to_find[g_j])
 		{
-			if (str[i + 1] == '\0' && to_find[j + 1] == '\0')
+			if (str[g_i + 1] == '\0' && to_find[g_j + 1] == '\0')
 				return (position);
-			if (str[i + 1] == '\0')
+			if (str[g_i + 1] == '\0')
 				return (0);
-			if (to_find[j + 1] == '\0')
+			if (to_find[g_j + 1] == '\0')
 				return (position);
-			i++;
-			j++;
+			g_i++;
+			g_j++;
 		}
 	}
 	return (position);

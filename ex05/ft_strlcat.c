@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 10:14:39 by edechena          #+#    #+#             */
-/*   Updated: 2023/07/09 18:01:18 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/10 22:16:57 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-unsigned int    ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	unsigned int    i;
-	unsigned int    destlen;
+	unsigned int	i;
+	unsigned int	destlen;
 
 	destlen = ft_strlen(dest);
 	i = 0;
