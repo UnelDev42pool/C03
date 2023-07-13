@@ -6,12 +6,9 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 22:49:10 by edechena          #+#    #+#             */
-/*   Updated: 2023/07/08 19:45:48 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/10 22:29:30 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
-#include <stdio.h>
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
